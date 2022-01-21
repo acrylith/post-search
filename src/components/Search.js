@@ -47,6 +47,7 @@ export default function Search(props) {
         props.setCurrentPage(1);
         setIsOpen(false);
         setValue("");
+        alert(value);
     }
 
     return(
