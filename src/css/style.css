@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 22px 0;
+}
+.search__field {
+  position: relative;
+}
+.search__input {
+  width: 320px;
+}
+.search__suggestions {
+  position: absolute;
+  list-style: none;
+  width: 100%;
+  max-height: 240px;
+  height: auto;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+  background-color: white;
+  z-index: 111;
+}
+.search__suggestion {
+  padding: 6px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.search__suggestion:hover {
+  background-color: lightgray;
+}
+.search__confirm {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.search__confirm__hover {
+  background-color: gray;
+}
+
+.post__pagination {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 22px 0;
+}
+.post__page {
+  cursor: pointer;
+  font-weight: bold;
+  color: #1a5699;
+  transition: all 0.3s;
+}
+.post__page:hover {
+  color: #002d61;
+}
+.post__page-current {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 24px;
+  transition: all 0.3s;
+  color: #991a1a;
+}
+.post__card h3 {
+  text-transform: uppercase;
+}
